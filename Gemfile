@@ -39,9 +39,14 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+group :development do
+  gem "better_errors", group: :development
+  gem "binding_of_caller", group: :development
+end
 
-gem "rspec-rails", "~> 3.0.0", group: :test
-gem "faker", group: :development
-gem "better_errors", group: :development
-gem "binding_of_caller", group: :development
-gem "factory_girl_rails", group: :test
+group :test do
+  gem "rspec-rails", "~> 3.0.0", group: :test
+  gem "faker", group: :development
+  gem "factory_girl_rails", group: :test
+  gem "codeclimate-test-reporter", require: nil
+end
