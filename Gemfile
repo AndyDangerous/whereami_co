@@ -37,7 +37,7 @@ gem 'spring',        group: :development
 # gem 'capistrano-rails', group: :development
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+gem 'pry', group: [:development, :test]
 
 group :development do
   gem "better_errors", group: :development
@@ -49,4 +49,5 @@ group :test do
   gem "faker", group: :development
   gem "factory_girl_rails", group: :test
   gem "codeclimate-test-reporter", require: nil
+  gem 'rgeo-geojson'
 end

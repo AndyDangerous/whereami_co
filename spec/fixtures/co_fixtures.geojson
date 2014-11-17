@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::26913" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "name": "Western half of the state", "owner": "N/A", "manager": "LAND TRUST", "mgmt_code": "61000", "mgmt_description": "National Land Trust Lands", "public_access": "No" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 450507.000173343694769, 4539717.184485747478902 ], [ 747861.32871725759469, 4544155.308792373165488 ], [ 763394.763790447032079, 4098123.815976502373815 ], [ 457164.186633282050025, 4095904.753823189530522 ], [ 450507.000173343694769, 4539717.184485747478902 ] ] ] } },
+{ "type": "Feature", "properties": { "name": "Eastern half of the state", "owner": "N/A", "manager": "BLM", "mgmt_code": "1000", "mgmt_description": "Basically Kansas", "public_access": "Yes" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 159070.170704930555075, 4547853.745714561082423 ], [ 449767.31278890609974, 4538977.497101309709251 ], [ 449767.31278890609974, 4538977.497101309709251 ], [ 456424.499248844454996, 4093685.691669876687229 ], [ 139098.6113251154311, 4103301.627667565364391 ], [ 159070.170704930555075, 4547853.745714561082423 ] ] ] } }
+]
+}
