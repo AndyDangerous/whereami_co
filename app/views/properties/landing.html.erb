@@ -1,0 +1,14 @@
+<h1>Welcome to Where Am I, CO</h1>
+<p>
+Click the link, and we'll take the location from your phone, device, or computer, and return some information about the land ownership.
+</p>
+
+<%= link_to 'omg', '/show', id: 'button' %>
+
+<script>
+  var button = document.getElementById('button');
+  button.addEventListener('click', function() {
+    console.log('shit is werkin');
+    getGeoLocation();
+  }, false);
+</script>
