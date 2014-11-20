@@ -21,11 +21,11 @@ describe "Properties API" do
     end
   end
     
-  it 'sends a boolean public vs. private response' do
+  xit 'sends a boolean public vs. private response' do
     # test coordinates in west half of state
     # test coordinates in east half of state
     # test coordinates outside state
-    binding.pry
+#    binding.pry
     get '/api/v1/properties' # plus lat/lon, etc
 
     expect(response).to be_success
