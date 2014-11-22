@@ -33,6 +33,8 @@ RSpec.describe Property, :type => :model do
       co_factory = RGeo::Cartesian.factory(:srid => 26913)
       wgs84_factory = RGeo::Geographic.spherical_factory(proj4: wgs84_proj4, :srid => 4326)
       
+      maybe_a_western_point = co_factory.point(391685.193937, 4347274.3642)
+      also_maybe_a_western_point = co_factory.point(4347274.3642, 391685.193937)
       western_point_latlon = wgs84_factory.point(-106.2555986, 39.2680503)
       western_point = RGeo::Feature.cast(western_point_latlon, factory: co_factory, project: true)
       eastern_point = co_factory.point(-104.8163896, 39.033757)
